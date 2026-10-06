@@ -1,0 +1,56 @@
+$primary-color: #333;
+$secondary-color: #fff;
+$accent-color: #4c9ab4;
+$background-color: #f4f4f9;
+$text-color: #333;
+$description-text: #555;
+$box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+.restaurants {
+    max-width: 1000px;
+    margin: 40px auto;
+
+    .restaurants-hint {
+        margin: 10px 0 20px;
+        color: $description-text;
+        line-height: 1.6;
+    }
+}
+.restaurant-table {
+    width: 65%;
+    border-collapse: collapse;
+    background-color: #fff;
+
+    th,
+    td {
+        border: 1px solid #555;
+        padding: 14px 20px;
+        text-align: center;
+    }
+
+    th {
+        background-color: #f4f4f4;
+    }
+
+    tbody tr {
+        cursor: pointer;
+
+        &:hover {
+            background-color: #eee;
+        }
+    }
+}
+
+#restaurant-details {
+    width: 330px;
+    max-width: 100%;
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #555;
+    background-color: #fff;
+
+    p {
+        margin-top: 20px;
+        line-height: 1.5;
+    }
+}
