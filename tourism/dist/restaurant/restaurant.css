@@ -9,7 +9,7 @@
 }
 
 .restaurant-table {
-  width: 65%;
+  width: 100%;
   border-collapse: collapse;
   background-color: #fff;
 }
@@ -40,6 +40,84 @@
 #restaurant-details p {
   margin-top: 20px;
   line-height: 1.5;
+}
+
+.restaurant-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap: 40px;
+  align-items: start;
+}
+
+#forma {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid #555;
+  background-color: #fff;
+}
+#forma h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+#forma label,
+#forma .cuisine-label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+#forma input,
+#forma textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 8px;
+  border: 1px solid #777;
+  font: inherit;
+}
+#forma > input,
+#forma > textarea {
+  margin-bottom: 20px;
+}
+#forma textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+#forma button {
+  padding: 8px 12px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+#forma button:hover {
+  background-color: #eee;
+}
+#forma input:focus-visible,
+#forma textarea:focus-visible,
+#forma button:focus-visible {
+  outline: 2px solid #4c9ab4;
+  outline-offset: 2px;
+}
+#forma .cuisine-input {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+#forma .cuisine-input input {
+  flex: 1;
+}
+#forma .cuisine-input button {
+  flex-shrink: 0;
+}
+#forma #submitBtn {
+  align-self: flex-end;
+  margin-top: 20px;
+}
+
+@media (max-width: 700px) {
+  .restaurant-layout {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*# sourceMappingURL=restaurant.css.map */

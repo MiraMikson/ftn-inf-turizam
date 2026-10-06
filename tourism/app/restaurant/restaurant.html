@@ -29,16 +29,47 @@
         <p class="restaurants-hint">
           Kliknite na restoran da pogledate tipove kuhinje.
         </p>
-        <table class="restaurant-table">
-          <thead>
-            <tr>
-              <th scope="col">Naziv</th>
-              <th scope="col">Kuhinja</th>
-            </tr>
-          </thead>
-          <tbody id="restaurant-list"></tbody>
-        </table>
-        <div id="restaurant-details" hidden></div>
+        <div class="restaurant-layout">
+          <div class="restaurant-overview">
+            <table class="restaurant-table">
+              <thead>
+                <tr>
+                  <th scope="col">Naziv</th>
+                  <th scope="col">Kuhinja</th>
+                </tr>
+              </thead>
+              <tbody id="restaurant-list"></tbody>
+            </table>
+            <div id="restaurant-details" hidden></div>
+          </div>
+          <form id="forma">
+            <h2>Dodavanje restorana</h2>
+
+            <label for="restaurant-name">Naziv:</label>
+            <input type="text" id="restaurant-name" name="naziv" required />
+
+            <label for="restaurant-description">Opis:</label>
+            <textarea
+              id="restaurant-description"
+              name="opis"
+              required
+            ></textarea>
+            <p class="cuisine-label">Kuhinja:</p>
+            <div class="cuisine-container" id="cuisineContainer">
+              <div class="cuisine-input">
+                <input
+                  type="text"
+                  name="cuisines"
+                  placeholder="Unesite kuhinju"
+                  aria-label="Tip kuhinje"
+                  required
+                />
+                <button type="button" onclick="addCuisineField()">+</button>
+              </div>
+            </div>
+            <button type="submit" id="submitBtn">Dodaj restoran</button>
+          </form>
+        </div>
       </section>
     </main>
   </body>

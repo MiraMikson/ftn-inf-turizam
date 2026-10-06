@@ -17,7 +17,7 @@ $box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 }
 .restaurant-table {
-    width: 65%;
+    width: 100%;
     border-collapse: collapse;
     background-color: #fff;
 
@@ -52,5 +52,94 @@ $box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     p {
         margin-top: 20px;
         line-height: 1.5;
+    }
+}
+.restaurant-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    gap: 40px;
+    align-items: start;
+}
+
+#forma {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #555;
+    background-color: #fff;
+
+    h2 {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    label,
+    .cuisine-label {
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        min-width: 0;
+        padding: 8px;
+        border: 1px solid #777;
+        font: inherit;
+    }
+
+    > input,
+    > textarea {
+        margin-bottom: 20px;
+    }
+
+    textarea {
+        min-height: 80px;
+        resize: vertical;
+    }
+
+    button {
+        padding: 8px 12px;
+        border: 1px solid #555;
+        border-radius: 5px;
+        background-color: #fff;
+        font: inherit;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #eee;
+        }
+    }
+
+    input:focus-visible,
+    textarea:focus-visible,
+    button:focus-visible {
+        outline: 2px solid $accent-color;
+        outline-offset: 2px;
+    }
+
+    .cuisine-input {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 10px;
+
+        input {
+            flex: 1;
+        }
+
+        button {
+            flex-shrink: 0;
+        }
+    }
+
+    #submitBtn {
+        align-self: flex-end;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .restaurant-layout {
+        grid-template-columns: 1fr;
     }
 }
