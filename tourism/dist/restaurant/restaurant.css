@@ -1,0 +1,45 @@
+.restaurants {
+  max-width: 1000px;
+  margin: 40px auto;
+}
+.restaurants .restaurants-hint {
+  margin: 10px 0 20px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.restaurant-table {
+  width: 65%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+.restaurant-table th,
+.restaurant-table td {
+  border: 1px solid #555;
+  padding: 14px 20px;
+  text-align: center;
+}
+.restaurant-table th {
+  background-color: #f4f4f4;
+}
+.restaurant-table tbody tr {
+  cursor: pointer;
+}
+.restaurant-table tbody tr:hover {
+  background-color: #eee;
+}
+
+#restaurant-details {
+  width: 330px;
+  max-width: 100%;
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #555;
+  background-color: #fff;
+}
+#restaurant-details p {
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+/*# sourceMappingURL=restaurant.css.map */
