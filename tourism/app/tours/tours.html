@@ -16,7 +16,7 @@
                 <li><a href="../restaurant/restaurant.html">Restorani</a></li>
             </ul>
         </nav>
-
+    <div class="main">
         <div id="contact-info">
             <h2>Ture</h2>
             <div class="tours-table">
@@ -31,27 +31,35 @@
                     <tbody id="tours-body"> 
                     </tbody>
                   </table>
-                  </div>
-            <div class="tour-details">
-               
             </div>
-
-                <!-- <form id="AddTourForm">
+            <div class="tour-details"></div> 
+        </div> 
     
-                     <label for="naziv">Naziv:</label>
+               
+            <div class="Form">
+                
+
+              <form id="AddTourForm">
+    
+                    <label for="naziv">Naziv:</label>
                     <input type="text" id="naziv" name="naziv" required>
-                     <br>
-                   <label for="cena">Duzina(km):</label>
-                   <input type="number" id="cena" name="cena" required>
-                   <br>
-                   <label for="opis">Opis:</label>
-                   <input type="text" id="opis" name="opis">
-                   <br>
-                   <label for="opis">Opis:</label>
-                   <input type="text" id="opis" name="opis">
-                   <br>
-                </form> -->
+                    <br>
+                    <label for="duzina">Duzina(km):</label>
+                    <input type="number" id="duzina" name="duzina" required>
+                    <br>
+                    <label for="opis">Opis:</label>
+                    <input type="text" id="opis" name="opis">
+                    <br>
+                    <label for="tagovi">Tagovi:</label>
+                    <input type="text" id="tagovi">
+                    <button type="button" id="dodajTag">+</button>
+
+                    <div id="listaTagova"></div>
+                    <br>
+                </form> 
+                <button type="button" id="submitBtn">Dodaj</button>
         </div>
-        <script src="tours.js"></script>
+    </div>
+    <script src="tours.js"></script>
     </body>
 </html>
